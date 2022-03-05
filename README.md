@@ -1,5 +1,8 @@
 # Getting Started with the API and IOTA
 
+## SETUP 
+
+* Create file .env in api folder and fill it following the example.evn file.
 
 ## API ROUTES, SO FAR
 
@@ -29,3 +32,10 @@ GET http://localhost:9000/api/iota/balance/atoi1qqa6mxujm8wdueuv8pjfnhkn8et0kpev
 * yarn add @types/node @types/express -D
 * yarn add cors
 * yarn add @types/node @types/cors -D
+* yarn add helmet
+
+
+### Debugging
+
+* npx tsc --sourceMap
+* SET NODE_ENV=development
