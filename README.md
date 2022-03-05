@@ -39,3 +39,11 @@ GET http://localhost:9000/api/iota/balance/atoi1qqa6mxujm8wdueuv8pjfnhkn8et0kpev
 
 * npx tsc --sourceMap
 * SET NODE_ENV=development
+
+Stop tracking files with git.
+* git rm api/.env --cached
+* git commit -m "Stopped tracking .env File"
+
+Stop tracking builded files with git.
+* git rm -r  --cached lib 
+* git commit -m "Stopped tracking builded files"

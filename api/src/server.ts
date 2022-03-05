@@ -5,6 +5,7 @@ import helmet from 'helmet';
 
 import userRoute from './routes/user';
 import iotaRoute from './routes/iota';
+import logEndPoints from './middleware/logEndPoints';
 
 
 // Check where this line goes in the other project.
@@ -17,11 +18,8 @@ app.use(helmet());
 app.use(express.json());
 app.use(cors());
 
-// A dummy middleware to test 
-app.use((req, res, next) => {
-    console.log(`${req.method} ${req.path}`);
-    next();
-});
+// A dummy middleware to test logging.
+app.use(logEndPoints);
 
 // Routes
 userRoute(app);
