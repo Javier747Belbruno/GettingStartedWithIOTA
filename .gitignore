@@ -20,7 +20,7 @@ public/css/main.css
 coverage
 
 # API keys and secrets
-# .env
+.env
 
 # Dependency directory
 node_modules
@@ -36,6 +36,7 @@ Thumbs.db
 
 # Ignore built ts files
 dist/**/*
+lib/**/*
 
 # ignore yarn.lock
 yarn.lock
