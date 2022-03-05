@@ -1,5 +1,4 @@
 
-
 export async function getNodeInfoService() {
     let data = "";
     const { ClientBuilder } = require('@iota/client');
@@ -28,7 +27,6 @@ export async function getASeedService() {
         console.log(err);
         return err;
     }
-
 }
 
 export async function generateAddressesService() {
@@ -51,9 +49,7 @@ export async function generateAddressesService() {
         console.log(err);
         return err;
     }
-
 }
-
 
 export async function getBalanceAddressService(address: string) {
     try {
@@ -72,8 +68,4 @@ export async function getBalanceAddressService(address: string) {
         console.log(err);
         return err;
     }
-
 }
-
-
-

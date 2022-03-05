@@ -2,7 +2,6 @@ import 'dotenv/config'
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
-
 import userRoute from './routes/user';
 import iotaRoute from './routes/iota';
 import logEndPoints from './middleware/logEndPoints';
@@ -10,14 +9,13 @@ import logEndPoints from './middleware/logEndPoints';
 
 const app = express();
 
+// middlewares
 app.use(helmet());
 app.use(express.json());
 app.use(cors());
-
-// An effortless middleware to test logging.
 app.use(logEndPoints);
 
-// Routes
+// routes
 userRoute(app);
 iotaRoute(app);
 

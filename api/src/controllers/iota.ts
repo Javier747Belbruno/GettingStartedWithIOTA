@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-
 import {
     getNodeInfoService, getASeedService, generateAddressesService, getBalanceAddressService
 } from "../services/iota";
@@ -22,7 +21,6 @@ export async function getASeed(req: Request, res: Response) {
         return res.status(500).json({ error: err });
     }
 }
-
 
 export async function getAddresses(req: Request, res: Response) {
     try {
