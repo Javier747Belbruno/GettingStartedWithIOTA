@@ -14,7 +14,9 @@
     Parameters: id: number
     Returns: JSON object with the user's id and name found or Error message in JSON format.
 
-
+GET 
+GET http://localhost:9000/api/iota/seed
+GET http://localhost:9000/api/iota/balance/atoi1qqa6mxujm8wdueuv8pjfnhkn8et0kpev584upnm2z58hvxjg3v78cqn2sxl
 ### Commands
 
 * cd api
