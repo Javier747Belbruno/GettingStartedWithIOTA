@@ -8,7 +8,7 @@ class User {
     }
 }
 // create a file and save with users
-function findById(id: number) {
+export function findById(id: number) {
     return new Promise((resolve, reject) => {
         if (id === 1) {
             resolve(new User(1, 'John'));
@@ -18,4 +18,3 @@ function findById(id: number) {
     });
 }
 
-export { findById };

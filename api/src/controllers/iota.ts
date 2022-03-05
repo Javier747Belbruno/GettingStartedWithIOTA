@@ -5,7 +5,7 @@ import {
 } from "../services/iota";
 
 
-async function getNodeInfo(req: Request, res: Response) {
+export async function getNodeInfo(req: Request, res: Response) {
     try {
         const nodeInfo = await getNodeInfoService();
         return res.json(nodeInfo);
@@ -14,7 +14,7 @@ async function getNodeInfo(req: Request, res: Response) {
     }
 }
 
-async function getASeed(req: Request, res: Response) {
+export async function getASeed(req: Request, res: Response) {
     try {
         const seed = await getASeedService();
         return res.json(seed);
@@ -24,7 +24,7 @@ async function getASeed(req: Request, res: Response) {
 }
 
 
-async function getAddresses(req: Request, res: Response) {
+export async function getAddresses(req: Request, res: Response) {
     try {
         const addresses = await generateAddressesService();
         return res.json(addresses);
@@ -33,7 +33,7 @@ async function getAddresses(req: Request, res: Response) {
     }
 }
 
-async function getBalanceAddress(req: Request, res: Response) {
+export async function getBalanceAddress(req: Request, res: Response) {
     // get the address from the request
     const address = req.params.address;
     try {
@@ -43,6 +43,3 @@ async function getBalanceAddress(req: Request, res: Response) {
         return res.status(500).json({ error: err });
     }
 }
-
-
-export { getASeed, getNodeInfo, getAddresses, getBalanceAddress };

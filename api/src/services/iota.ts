@@ -1,8 +1,6 @@
 
 
-async function getNodeInfoService() {
-
-
+export async function getNodeInfoService() {
     let data = "";
     const { ClientBuilder } = require('@iota/client');
 
@@ -13,12 +11,6 @@ async function getNodeInfoService() {
             .build();
 
         data = client.getInfo();
-        const mnemonic = client.generateMnemonic();
-        console.log(mnemonic);
-
-        const hexEncodedSeed = client.mnemonicToHexSeed(mnemonic);
-        console.log(hexEncodedSeed);
-
         return data;
     } catch (err) {
         console.log(err);
@@ -26,7 +18,7 @@ async function getNodeInfoService() {
     }
 }
 
-async function getASeedService() {
+export async function getASeedService() {
     const crypto = require('crypto');
 
     try {
@@ -39,7 +31,7 @@ async function getASeedService() {
 
 }
 
-async function generateAddressesService() {
+export async function generateAddressesService() {
     try {
         const { ClientBuilder } = require('@iota/client');
 
@@ -63,7 +55,7 @@ async function generateAddressesService() {
 }
 
 
-async function getBalanceAddressService(address: string) {
+export async function getBalanceAddressService(address: string) {
     try {
         const { ClientBuilder } = require('@iota/client');
 
@@ -82,8 +74,6 @@ async function getBalanceAddressService(address: string) {
     }
 
 }
-
-export { getNodeInfoService, getASeedService, generateAddressesService, getBalanceAddressService };
 
 
 
