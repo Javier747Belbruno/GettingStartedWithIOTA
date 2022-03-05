@@ -4,7 +4,8 @@
 
 * Create file .env in api folder and fill it following the example.evn file.
 
-## API ROUTES, SO FAR
+## API ROUTES 
+
 
     POST 'http://localhost:9000/api/users/:id/name/:name'
     
@@ -20,19 +21,26 @@
 GET 
 GET http://localhost:9000/api/iota/seed
 GET http://localhost:9000/api/iota/balance/atoi1qqa6mxujm8wdueuv8pjfnhkn8et0kpev584upnm2z58hvxjg3v78cqn2sxl
-### Commands
+
+
+
+
+## COMMANDS EMPLOYED
 
 * cd api
 * npx tsc --init
 * yarn init    
 * yarn add ts-node-dev typescript -D
-* yarn add prettier
+* yarn add prettier 
 * yarn dev
-* yarn add express
+* yarn add express 
 * yarn add @types/node @types/express -D
-* yarn add cors
+
+* yarn add cors (Middleware)
 * yarn add @types/node @types/cors -D
-* yarn add helmet
+
+* yarn add helmet (Middleware)
+* yarn add winston (Logger)
 
 
 ### Debugging

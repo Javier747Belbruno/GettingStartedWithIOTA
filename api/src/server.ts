@@ -8,17 +8,13 @@ import iotaRoute from './routes/iota';
 import logEndPoints from './middleware/logEndPoints';
 
 
-// Check where this line goes in the other project.
-//const dotenv = require("dotenv").config();
-
-
 const app = express();
 
 app.use(helmet());
 app.use(express.json());
 app.use(cors());
 
-// A dummy middleware to test logging.
+// An effortless middleware to test logging.
 app.use(logEndPoints);
 
 // Routes
