@@ -2,7 +2,13 @@
 
 ## SETUP 
 
+* cd api
+* yarn install
 * Create file .env in api folder and fill it following the example.evn file.
+
+## RUN
+* yarn dev
+
 
 ## API ROUTES 
 
@@ -25,7 +31,7 @@ GET http://localhost:9000/api/iota/balance/atoi1qqa6mxujm8wdueuv8pjfnhkn8et0kpev
 
 
 
-## COMMANDS EMPLOYED
+## COMMANDS EMPLOYED FOR DEVELOPMENT
 
 * cd api
 * npx tsc --init
