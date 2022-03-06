@@ -31,7 +31,7 @@ GET http://localhost:9000/api/iota/balance/atoi1qqa6mxujm8wdueuv8pjfnhkn8et0kpev
 
 
 
-## COMMANDS EMPLOYED FOR DEVELOPMENT
+### Commands employed for development
 
 * cd api
 * npx tsc --init
@@ -48,6 +48,12 @@ GET http://localhost:9000/api/iota/balance/atoi1qqa6mxujm8wdueuv8pjfnhkn8et0kpev
 * yarn add helmet (Middleware)
 * yarn add winston (Logger)
 
+
+### Downgrade Node version v17.x to stable (v16.x)
+* @iota/client is unsoported on v17.x
+
+* sudo npm install -g n
+* sudo n stable
 
 ### Debugging
 
