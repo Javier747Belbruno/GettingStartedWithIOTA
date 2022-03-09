@@ -52,6 +52,8 @@ yarn start
 
 - yarn add helmet (Middleware)
 - yarn add winston (Logger)
+
+- yarn add express-validator
 ```
 
 ### Downgrade Node version v17.x to stable (v16.x)
